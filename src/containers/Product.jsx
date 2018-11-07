@@ -19,14 +19,11 @@ class Product extends Component {
       return variant.attributes[0].value === bodySize && variant.attributes[1].value === color
     })[0]
 
-    console.log('selectedVariant', selectedVariant)
-
     if (selectedVariant) {
       this.setState({
         selectedVariantId: selectedVariant.id,
       })
     }
-
   };
 
   render() {
@@ -34,6 +31,7 @@ class Product extends Component {
       productTitle,
       productVariants,
       selectableAttributes,
+      baremList,
     } = data;
     const { selectedVariantId } = this.state;
     const currentProduct = productVariants.find(product => product.id === selectedVariantId);
@@ -45,11 +43,13 @@ class Product extends Component {
             <div className="row">
               <ProductGallery images={ currentProduct.images } />
               <ProductInfo
+                selectedVariantId={ selectedVariantId }
                 changeProductVariant={ this.changeProductVariant }
                 productVariants = { productVariants }
                 attributes={ currentProduct.attributes }
                 productTitle={ productTitle }
-                selectableAttributes={ selectableAttributes} />
+                selectableAttributes={ selectableAttributes}
+                baremList={ baremList } />
             </div>
           </div>
         </div>

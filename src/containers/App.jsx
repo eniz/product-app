@@ -10,10 +10,10 @@ class App extends Component {
           <div className="container">
             <a
               className="App-link"
-              href="https://reactjs.org"
+              href="https://www.n11.com"
               target="_blank"
               rel="noopener noreferrer">
-              N11 Case App
+              Product App
             </a>
           </div>
         </header>
