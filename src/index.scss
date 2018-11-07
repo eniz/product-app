@@ -1,0 +1,78 @@
+@import "css/normalize";
+@import "css/global.scss";
+@import "css/variable.scss";
+@import "css/mixin.scss";
+@import "css/grid.scss";
+
+
+.Product-wrap {
+  margin-top: 50px;
+}
+
+.Product-title {
+  font-size: 24px;
+}
+
+.Product-attributes {
+  margin-top: 15px;
+}
+
+.Product-attribute-item {
+  margin-top: 10px;
+}
+
+.Product-attribute-title {
+  font-weight: 500;
+  display: inline;
+}
+
+.Product-attribute-button {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  color: #212121;
+  cursor: pointer;
+  margin-left: 20px;
+  border-radius: 3px;
+  width: 100px;
+  height: 35px;
+
+  &:first-child {
+    margin-left: 10px;
+  }
+
+  &-active {
+    border: 2px solid #616161;
+  }
+}
+
+.Product-active {
+  img {
+    max-width: 500px;
+    max-height: 500px;
+  }
+}
+
+.Product-thumbnails {
+  display: flex;
+  margin-top: 10px;
+
+  .Product-thumbnail-item {
+    margin-left: 10px;
+    border: 2px solid #eee;
+    cursor: pointer;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &-active {
+      border: 4px solid #616161;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+}

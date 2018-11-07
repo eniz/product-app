@@ -1,0 +1,15 @@
+@mixin mq($size: "sm") {
+  @if ($size == "sm") {
+    @media only screen and (min-width: map_get($breakpoints, $size)) {
+      @content
+    }
+  } @else if ($size == "md") {
+    @media only screen and (min-width: map_get($breakpoints, $size)) {
+      @content
+    }
+  } @else if ($size == "lg") {
+    @media only screen and (min-width: map_get($breakpoints, $size)) {
+      @content
+    }
+  }
+}
