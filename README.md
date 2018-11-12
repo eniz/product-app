@@ -1,7 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## DEMO
-[n11-challenge.surge.sh](n11-challenge.surge.sh)
+[DEMO](http://n11-challenge.surge.sh)
 
 ## Available Scripts
 
